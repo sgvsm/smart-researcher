@@ -61,7 +61,7 @@ function App() {
               <button onClick={() => scrollToSection('faq')} className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
                 FAQ
               </button>
-              <Button onClick={() => scrollToSection('contact')}>Get Started</Button>
+              <Button onClick={() => setContactModalOpen(true)}>Join Waitlist</Button>
             </div>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden p-2">
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -84,7 +84,7 @@ function App() {
               <button onClick={() => scrollToSection('faq')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md">
                 FAQ
               </button>
-              <Button onClick={() => scrollToSection('contact')} className="w-full">Get Started</Button>
+              <Button onClick={() => setContactModalOpen(true)} className="w-full">Join Waitlist</Button>
             </div>
           </div>
         )}
@@ -103,8 +103,8 @@ function App() {
                 and helps you extract exactly what you need for your academic research.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" onClick={() => scrollToSection('contact')}>
-                  Start Free Trial
+                <Button size="lg" onClick={() => setContactModalOpen(true)}>
+                  Join Waitlist
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => scrollToSection('how-it-works')}>
                   See How It Works
@@ -354,7 +354,7 @@ function App() {
                 <DollarSign className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Affordable</h3>
                 <p className="text-gray-600 mb-4">
-                  No expensive licenses. Typical project costs $50-150 total. Free tier available. Fraction of research assistant costs.
+                  No expensive licenses. Typical project costs $500-800 total. Free tier available. Fraction of research assistant costs.
                 </p>
                 <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
                   90% cheaper than alternatives
@@ -442,7 +442,7 @@ function App() {
               },
               {
                 q: "How much does it really cost?",
-                a: "There's a free tier for smaller projects. For a typical dissertation project, expect to spend $50-150 total for AI processing costs - a fraction of what you'd spend on research assistants. Most users find the time savings alone worth 100x the cost."
+                a: "There's a free tier for smaller projects. For a typical dissertation project, expect to spend $500-800 total for AI processing costs - a fraction of what you'd spend on research assistants. Most users find the time savings alone worth 100x the cost."
               }
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden">
@@ -466,58 +466,76 @@ function App() {
         </div>
       </section>
 
-      {/* Contact/CTA Section */}
+      {/* Waitlist CTA Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Research?</h2>
-            <p className="text-xl opacity-90">
-              Join thousands of researchers saving months of work. Get in touch to start your journey.
-            </p>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">Ready to Transform Your Research?</h2>
+          <p className="text-lg sm:text-xl opacity-90 mb-8 sm:mb-12 max-w-2xl mx-auto">
+            Join the waitlist and be among the first researchers to experience the platform that turns months of work into hours.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              onClick={() => setContactModalOpen(true)}
+              className="bg-white text-primary hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto"
+            >
+              Join the Waitlist
+            </Button>
           </div>
-          <Card className="bg-white">
-            <CardContent className="p-8">
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">First Name</label>
-                    <Input placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">Last Name</label>
-                    <Input placeholder="Doe" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Email</label>
-                  <Input type="email" placeholder="john.doe@university.edu" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Institution</label>
-                  <Input placeholder="Your University" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Research Field</label>
-                  <Input placeholder="e.g., Political Science, Sociology, etc." />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-700">Tell us about your research project</label>
-                  <Textarea
-                    placeholder="What are you researching? What challenges are you facing?"
-                    className="min-h-[120px]"
-                  />
-                </div>
-                <Button size="lg" className="w-full" type="submit">
-                  Submit Request
-                </Button>
-                <p className="text-center text-sm text-gray-500">
-                  No credit card required • Setup in 5 minutes • Cancel anytime
-                </p>
-              </form>
-            </CardContent>
-          </Card>
+          <p className="mt-6 sm:mt-8 text-sm sm:text-base opacity-90">
+            Early access • Priority onboarding • Special launch pricing
+          </p>
         </div>
       </section>
+
+      {/* Contact Form Modal */}
+      <Dialog open={contactModalOpen} onOpenChange={setContactModalOpen}>
+        <DialogContent onClose={() => setContactModalOpen(false)}>
+          <DialogHeader>
+            <DialogTitle className="text-2xl sm:text-3xl">Join the Waitlist</DialogTitle>
+            <DialogDescription className="text-base">
+              Get early access to the platform and special launch pricing. We'll be in touch soon!
+            </DialogDescription>
+          </DialogHeader>
+          <form className="space-y-4 sm:space-y-6 mt-4" onSubmit={(e) => { e.preventDefault(); setContactModalOpen(false); }}>
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700">First Name</label>
+                <Input placeholder="John" required />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-700">Last Name</label>
+                <Input placeholder="Doe" required />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-gray-700">Email</label>
+              <Input type="email" placeholder="john.doe@university.edu" required />
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-gray-700">Institution</label>
+              <Input placeholder="Your University" />
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-gray-700">Research Field</label>
+              <Input placeholder="e.g., Political Science, Sociology, etc." />
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-gray-700">Tell us about your research project</label>
+              <Textarea
+                placeholder="What are you researching? What challenges are you facing?"
+                className="min-h-[100px] sm:min-h-[120px]"
+              />
+            </div>
+            <Button size="lg" className="w-full" type="submit">
+              Submit Request
+            </Button>
+            <p className="text-center text-xs sm:text-sm text-gray-500">
+              No credit card required • We'll contact you soon with early access details
+            </p>
+          </form>
+        </DialogContent>
+      </Dialog>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
