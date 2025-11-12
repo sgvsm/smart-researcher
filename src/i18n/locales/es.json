@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "benefits": "Beneficios",
+    "faq": "Preguntas Frecuentes",
+    "joinWaitlist": "Unirse a la Lista de Espera"
+  },
+  "hero": {
+    "title": "Transforma Meses de Investigación en Horas",
+    "subtitle": "Aprovecha la IA para realizar revisiones sistemáticas, analizar miles de artículos y acelerar tu investigación - todo con rigurosos estándares académicos.",
+    "getStarted": "Comenzar",
+    "watchDemo": "Ver Demo",
+    "stats": {
+      "timeSaved": "Tiempo Ahorrado",
+      "papersAnalyzed": "Artículos Analizados",
+      "timeFrame": "No Semanas"
+    }
+  },
+  "problems": {
+    "title": "La Realidad de la Investigación",
+    "subtitle": "Cada investigador conoce estos desafíos muy bien",
+    "cards": {
+      "overwhelming": {
+        "title": "Volumen Abrumador",
+        "description": "Más de 10,000 artículos publicados mensualmente en tu campo. No puedes mantenerte al día, y descubrimientos importantes se te escapan."
+      },
+      "timeIntensive": {
+        "title": "Proceso que Consume Tiempo",
+        "description": "Las revisiones bibliográficas toman meses. Codificar datos cualitativos toma semanas. Tiempo que deberías dedicar a generar conocimientos."
+      },
+      "consistency": {
+        "title": "Problemas de Consistencia",
+        "description": "Aplicar el mismo marco de análisis consistentemente en cientos de casos. La fatiga y el desvío socavan la confiabilidad."
+      },
+      "documentation": {
+        "title": "Carga de Documentación",
+        "description": "Mantener registros detallados de evidencia y justificar cada decisión. Crítico pero agotador."
+      },
+      "expertise": {
+        "title": "Silos de Experiencia",
+        "description": "Tu experiencia es profunda pero limitada. Las conexiones importantes entre campos permanecen invisibles."
+      },
+      "reproduction": {
+        "title": "Crisis de Reproducción",
+        "description": "Los procesos manuales son difíciles de documentar completamente. Los revisores no pueden verificar tu enfoque sistemático."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Tu Investigación, Potenciada",
+    "subtitle": "Cuatro simples pasos para transformar tu proceso de investigación",
+    "steps": {
+      "search": {
+        "badge": "1-2 semanas → 30-60 mins",
+        "title": "Búsqueda Bibliográfica Inteligente",
+        "description": "Indica a la IA tu pregunta de investigación. Busca en más de 200M de artículos, identifica los estudios más relevantes y construye una bibliografía completa en minutos."
+      },
+      "read": {
+        "badge": "Meses → 6 horas (10K artículos)",
+        "title": "Lectura y Clasificación Automatizada",
+        "description": "La IA lee cada artículo, extrae hallazgos clave, métodos y resultados. Los categoriza por tema, metodología y relevancia a tu pregunta."
+      },
+      "review": {
+        "badge": "Semanas → 2 horas",
+        "title": "Síntesis de Evidencia",
+        "description": "Obtén una revisión bibliográfica estructurada con tendencias, brechas, contradicciones y temas emergentes - todo con citas y registros de evidencia."
+      },
+      "analyze": {
+        "badge": "Meses → 4 horas",
+        "title": "Análisis Sistemático",
+        "description": "Define tu marco analítico. La IA evalúa sistemáticamente cada caso con perfecta consistencia, proporcionando puntuaciones con registros completos de evidencia."
+      }
+    }
+  },
+  "benefits": {
+    "title": "Resultados Reales para Investigadores Reales",
+    "subtitle": "Únete a cientos de investigadores que ya están acelerando su trabajo",
+    "cards": {
+      "faster": {
+        "badge": "Velocidad",
+        "title": "95% Más Rápido",
+        "description": "Completa revisiones sistemáticas en horas, no meses. Búsquedas bibliográficas en minutos, no semanas. Llega a los conocimientos más rápido."
+      },
+      "comprehensive": {
+        "badge": "Cobertura",
+        "title": "Nunca Te Pierdas Artículos Clave",
+        "description": "La IA busca en más de 200M de artículos con recuperación perfecta. Referencias cruzadas que nunca encontrarías manualmente. Cobertura completa de tu campo."
+      },
+      "rigorous": {
+        "badge": "Calidad",
+        "title": "Riguroso y Transparente",
+        "description": "Cada hallazgo respaldado por evidencia. Registros de auditoría completos. Métodos tan sistemáticos que los revisores quedarán impresionados."
+      },
+      "consistent": {
+        "badge": "Confiabilidad",
+        "title": "Consistencia Perfecta",
+        "description": "Aplica tu marco analítico a 1,000 casos sin ningún desvío. Mismos estándares, cada vez. Reproducible y defendible."
+      },
+      "collaborative": {
+        "badge": "Trabajo en Equipo",
+        "title": "Diseñado para Equipos",
+        "description": "Comparte marcos, colabora en la codificación, fusiona análisis sin problemas. Todo tu equipo trabajando desde el mismo enfoque sistemático."
+      },
+      "affordable": {
+        "badge": "Valor",
+        "title": "Accesible",
+        "description": "Una revisión sistemática completa cuesta $500-800 en total. Compara con meses de tiempo de asistente de investigación o servicios comerciales de revisión a $10K+."
+      }
+    }
+  },
+  "comparison": {
+    "title": "La Forma Tradicional vs. La Forma Inteligente",
+    "subtitle": "Mira la diferencia que hace la investigación impulsada por IA",
+    "table": {
+      "headers": {
+        "task": "Tarea",
+        "traditional": "Tradicional",
+        "withAI": "Con Nuestra IA",
+        "timeSaved": "Tiempo Ahorrado"
+      },
+      "rows": {
+        "litSearch": {
+          "task": "Búsqueda Bibliográfica",
+          "traditional": "1-2 semanas",
+          "withAI": "30-60 min",
+          "timeSaved": "98%"
+        },
+        "reading": {
+          "task": "Lectura de 10K Artículos",
+          "traditional": "6+ meses",
+          "withAI": "~6 horas",
+          "timeSaved": "99%"
+        },
+        "review": {
+          "task": "Revisión Bibliográfica",
+          "traditional": "3-4 semanas",
+          "withAI": "~2 horas",
+          "timeSaved": "99%"
+        },
+        "analysis": {
+          "task": "Análisis Sistemático",
+          "traditional": "2-3 meses",
+          "withAI": "~4 horas",
+          "timeSaved": "99%"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber",
+    "questions": {
+      "q1": {
+        "question": "¿Es esto solo otra herramienta de revisión bibliográfica?",
+        "answer": "No. Esta es una plataforma de investigación completa que va mucho más allá de la simple búsqueda bibliográfica. Lee y analiza artículos, sintetiza hallazgos, realiza codificación sistemática de datos cualitativos y mantiene registros rigurosos de evidencia - todo con asistencia de IA pero bajo tu control."
+      },
+      "q2": {
+        "question": "¿Cómo puedo confiar en investigación generada por IA?",
+        "answer": "No deberías confiar ciegamente en ninguna herramienta - incluyendo la nuestra. Por eso proporcionamos transparencia completa: cada afirmación enlaza a artículos fuente, cada análisis muestra su registro de evidencia, y puedes verificar cualquier hallazgo. La IA es un asistente de investigación, no un reemplazo de tu experiencia."
+      },
+      "q3": {
+        "question": "¿Para qué campos funciona esto?",
+        "answer": "Cualquier campo con investigación publicada: ciencias sociales, ciencias de la salud, educación, negocios, políticas públicas, humanidades y más. Nuestra IA comprende la escritura académica en todas las disciplinas y se adapta a tu metodología específica."
+      },
+      "q4": {
+        "question": "¿Cuánto cuesta?",
+        "answer": "Una revisión sistemática completa (búsqueda, lectura y análisis de más de 10,000 artículos) cuesta aproximadamente $500-800 en total. Compara esto con meses de tiempo de asistente de investigación o servicios comerciales de revisión que cobran más de $10,000. Creemos que las herramientas de investigación potentes deben ser accesibles para todos los investigadores."
+      },
+      "q5": {
+        "question": "¿Puedo usar esto para mi tesis/publicación?",
+        "answer": "Absolutamente. Nuestra plataforma está diseñada para trabajo académico riguroso. El enfoque sistemático, la documentación completa y la transparencia la hacen ideal para tesis, solicitudes de subvención y publicaciones revisadas por pares. Muchos investigadores ya están citando revisiones sistemáticas asistidas por IA en revistas de primer nivel."
+      },
+      "q6": {
+        "question": "¿Reemplazan a los investigadores humanos?",
+        "answer": "No. Amplificamos a los investigadores humanos. Tú defines las preguntas de investigación, estableces los criterios, interpretas los hallazgos y sacas las conclusiones. La IA maneja el trabajo sistemático que consume tiempo: buscar, leer, categorizar y mantener la consistencia. Tú te enfocas en el conocimiento y el descubrimiento."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "¿Listo para Transformar Tu Investigación?",
+    "subtitle": "Únete a la lista de espera y sé uno de los primeros investigadores en acceder a nuestra plataforma de investigación impulsada por IA.",
+    "button": "Unirse a la Lista de Espera",
+    "benefits": "Acceso anticipado • Incorporación prioritaria • Precio especial de lanzamiento"
+  },
+  "modal": {
+    "title": "Unirse a la Lista de Espera",
+    "description": "Obtén acceso anticipado a la plataforma de investigación impulsada por IA. Te contactaremos tan pronto como haya lugares disponibles.",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "institution": "Institución/Organización",
+      "researchField": "Campo de Investigación",
+      "projectDescription": "Cuéntanos sobre tu proyecto de investigación",
+      "projectPlaceholder": "¿En qué tipo de investigación estás trabajando? ¿Qué desafíos estás enfrentando?",
+      "submit": "Enviar Solicitud",
+      "footer": "Respetamos tu privacidad. Tu información solo se utilizará para contactarte sobre el acceso anticipado."
+    }
+  },
+  "footer": {
+    "links": {
+      "about": "Acerca de",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "contact": "Contacto",
+      "blog": "Blog"
+    },
+    "copyright": "Plataforma de Investigación Inteligente. Acelerando el descubrimiento a través de IA."
+  }
+}

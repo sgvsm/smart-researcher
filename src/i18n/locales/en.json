@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "benefits": "Benefits",
+    "faq": "FAQ",
+    "joinWaitlist": "Join Waitlist"
+  },
+  "hero": {
+    "title": "Transform Months of Research into Hours",
+    "subtitle": "Harness AI to conduct systematic reviews, analyze thousands of papers, and accelerate your research - all with rigorous academic standards.",
+    "getStarted": "Get Started",
+    "watchDemo": "Watch Demo",
+    "stats": {
+      "timeSaved": "Time Saved",
+      "papersAnalyzed": "Papers Analyzed",
+      "timeFrame": "Not Weeks"
+    }
+  },
+  "problems": {
+    "title": "The Research Reality",
+    "subtitle": "Every researcher knows these challenges all too well",
+    "cards": {
+      "overwhelming": {
+        "title": "Overwhelming Volume",
+        "description": "10,000+ papers published monthly in your field. You can't keep up, and important discoveries slip past you."
+      },
+      "timeIntensive": {
+        "title": "Time-Intensive Process",
+        "description": "Literature reviews take months. Coding qualitative data takes weeks. Time you should spend on insights."
+      },
+      "consistency": {
+        "title": "Consistency Issues",
+        "description": "Applying the same analysis framework consistently across hundreds of cases. Fatigue and drift undermine reliability."
+      },
+      "documentation": {
+        "title": "Documentation Burden",
+        "description": "Maintaining detailed evidence trails and justifying every decision. Critical but exhausting."
+      },
+      "expertise": {
+        "title": "Expertise Silos",
+        "description": "Your expertise is deep but narrow. Important connections across fields remain invisible."
+      },
+      "reproduction": {
+        "title": "Reproduction Crisis",
+        "description": "Manual processes are hard to document completely. Reviewers can't verify your systematic approach."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Your Research, Supercharged",
+    "subtitle": "Four simple steps to transform your research process",
+    "steps": {
+      "search": {
+        "badge": "1-2 weeks → 30-60 mins",
+        "title": "Smart Literature Search",
+        "description": "Tell the AI your research question. It searches across 200M+ papers, identifies the most relevant studies, and builds a comprehensive bibliography in minutes."
+      },
+      "read": {
+        "badge": "Months → 6 hours (10K papers)",
+        "title": "Automated Reading & Classification",
+        "description": "The AI reads every paper, extracts key findings, methods, and results. It categorizes them by theme, methodology, and relevance to your question."
+      },
+      "review": {
+        "badge": "Weeks → 2 hours",
+        "title": "Evidence Synthesis",
+        "description": "Get a structured literature review with trends, gaps, contradictions, and emerging themes - all with citations and evidence trails."
+      },
+      "analyze": {
+        "badge": "Months → 4 hours",
+        "title": "Systematic Analysis",
+        "description": "Define your analytical framework. The AI systematically evaluates each case with perfect consistency, providing scores with full evidence trails."
+      }
+    }
+  },
+  "benefits": {
+    "title": "Real Results for Real Researchers",
+    "subtitle": "Join hundreds of researchers already accelerating their work",
+    "cards": {
+      "faster": {
+        "badge": "Speed",
+        "title": "95% Faster Research",
+        "description": "Complete systematic reviews in hours, not months. Literature searches in minutes, not weeks. Get to insights faster."
+      },
+      "comprehensive": {
+        "badge": "Coverage",
+        "title": "Never Miss Key Papers",
+        "description": "AI searches across 200M+ papers with perfect recall. Cross-references you'd never find manually. Complete coverage of your field."
+      },
+      "rigorous": {
+        "badge": "Quality",
+        "title": "Rigorous & Transparent",
+        "description": "Every finding backed by evidence. Complete audit trails. Methods so systematic that reviewers will be impressed."
+      },
+      "consistent": {
+        "badge": "Reliability",
+        "title": "Perfect Consistency",
+        "description": "Apply your analytical framework to 1,000 cases with zero drift. Same standards, every time. Reproducible and defensible."
+      },
+      "collaborative": {
+        "badge": "Teamwork",
+        "title": "Built for Teams",
+        "description": "Share frameworks, collaborate on coding, merge analyses seamlessly. Your whole team working from the same systematic approach."
+      },
+      "affordable": {
+        "badge": "Value",
+        "title": "Affordable",
+        "description": "A single systematic review costs $500-800 total. Compare to months of RA time or commercial review services at $10K+."
+      }
+    }
+  },
+  "comparison": {
+    "title": "The Traditional Way vs. The Smart Way",
+    "subtitle": "See the difference AI-powered research makes",
+    "table": {
+      "headers": {
+        "task": "Task",
+        "traditional": "Traditional",
+        "withAI": "With Our AI",
+        "timeSaved": "Time Saved"
+      },
+      "rows": {
+        "litSearch": {
+          "task": "Literature Search",
+          "traditional": "1-2 weeks",
+          "withAI": "30-60 min",
+          "timeSaved": "98%"
+        },
+        "reading": {
+          "task": "Reading 10K Papers",
+          "traditional": "6+ months",
+          "withAI": "~6 hours",
+          "timeSaved": "99%"
+        },
+        "review": {
+          "task": "Literature Review",
+          "traditional": "3-4 weeks",
+          "withAI": "~2 hours",
+          "timeSaved": "99%"
+        },
+        "analysis": {
+          "task": "Systematic Analysis",
+          "traditional": "2-3 months",
+          "withAI": "~4 hours",
+          "timeSaved": "99%"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know",
+    "questions": {
+      "q1": {
+        "question": "Is this just another literature review tool?",
+        "answer": "No. This is a complete research platform that goes far beyond simple literature search. It reads and analyzes papers, synthesizes findings, conducts systematic coding of qualitative data, and maintains rigorous evidence trails - all with AI assistance but under your control."
+      },
+      "q2": {
+        "question": "How can I trust AI-generated research?",
+        "answer": "You shouldn't blindly trust any tool - ours included. That's why we provide complete transparency: every claim links to source papers, every analysis shows its evidence trail, and you can verify any finding. The AI is a research assistant, not a replacement for your expertise."
+      },
+      "q3": {
+        "question": "What fields does this work for?",
+        "answer": "Any field with published research: social sciences, health sciences, education, business, policy, humanities, and more. Our AI understands academic writing across disciplines and adapts to your specific methodology."
+      },
+      "q4": {
+        "question": "How much does it cost?",
+        "answer": "A comprehensive systematic review (searching, reading, and analyzing 10,000+ papers) costs approximately $500-800 in total. Compare this to months of research assistant time or commercial review services charging $10,000+. We believe powerful research tools should be accessible to all researchers."
+      },
+      "q5": {
+        "question": "Can I use this for my dissertation/publication?",
+        "answer": "Absolutely. Our platform is designed for rigorous academic work. The systematic approach, complete documentation, and transparency make it ideal for dissertations, grant applications, and peer-reviewed publications. Many researchers are already citing AI-assisted systematic reviews in top journals."
+      },
+      "q6": {
+        "question": "Do you replace human researchers?",
+        "answer": "No. We amplify human researchers. You define the research questions, set the criteria, interpret the findings, and draw the conclusions. The AI handles the time-consuming systematic work: searching, reading, categorizing, and maintaining consistency. You focus on insight and discovery."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Ready to Transform Your Research?",
+    "subtitle": "Join the waitlist and be among the first researchers to access our AI-powered research platform.",
+    "button": "Join the Waitlist",
+    "benefits": "Early access • Priority onboarding • Special launch pricing"
+  },
+  "modal": {
+    "title": "Join the Waitlist",
+    "description": "Get early access to the AI-powered research platform. We'll contact you as soon as spots are available.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "institution": "Institution/Organization",
+      "researchField": "Research Field",
+      "projectDescription": "Tell us about your research project",
+      "projectPlaceholder": "What kind of research are you working on? What challenges are you facing?",
+      "submit": "Submit Request",
+      "footer": "We respect your privacy. Your information will only be used to contact you about early access."
+    }
+  },
+  "footer": {
+    "links": {
+      "about": "About",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "contact": "Contact",
+      "blog": "Blog"
+    },
+    "copyright": "Smart Research Platform. Accelerating discovery through AI."
+  }
+}
