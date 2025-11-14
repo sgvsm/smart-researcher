@@ -47,37 +47,39 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b z-50">
+      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border/50 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center gap-2">
-              <img src="/logo.svg" alt="Smart Research Logo" className="h-8 sm:h-10 w-8 sm:w-10" />
-              <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center gap-3">
+              <img src="/logo.svg" alt="Smart Research Logo" className="h-10 w-10" />
+              <span className="text-xl font-semibold text-gray-900">
                 Smart Research
               </span>
             </div>
-            <div className="hidden md:flex items-center gap-6 lg:gap-8">
-              <button onClick={() => scrollToSection('features')} className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+            <div className="hidden md:flex items-center gap-8">
+              <button onClick={() => scrollToSection('features')} className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
                 {t('nav.features')}
               </button>
-              <button onClick={() => scrollToSection('how-it-works')} className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('how-it-works')} className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
                 {t('nav.howItWorks')}
               </button>
-              <button onClick={() => scrollToSection('benefits')} className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('benefits')} className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
                 {t('nav.benefits')}
-              </button>
-              <button onClick={() => scrollToSection('faq')} className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
-                {t('nav.faq')}
               </button>
               <button
                 onClick={toggleLanguage}
-                className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                 title={i18n.language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
               >
                 <Languages className="h-4 w-4" />
                 <span className="uppercase">{i18n.language === 'en' ? 'ES' : 'EN'}</span>
               </button>
-              <Button onClick={() => setContactModalOpen(true)}>{t('nav.joinWaitlist')}</Button>
+              <Button
+                onClick={() => setContactModalOpen(true)}
+                className="rounded-full px-6 bg-gray-900 hover:bg-gray-800 text-white"
+              >
+                {t('nav.joinWaitlist')}
+              </Button>
             </div>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden p-2">
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -86,82 +88,78 @@ function App() {
         </div>
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t bg-white">
+          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md">
             <div className="px-4 py-4 space-y-3">
-              <button onClick={() => scrollToSection('features')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md">
+              <button onClick={() => scrollToSection('features')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-white/50 rounded-md">
                 {t('nav.features')}
               </button>
-              <button onClick={() => scrollToSection('how-it-works')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md">
+              <button onClick={() => scrollToSection('how-it-works')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-white/50 rounded-md">
                 {t('nav.howItWorks')}
               </button>
-              <button onClick={() => scrollToSection('benefits')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md">
+              <button onClick={() => scrollToSection('benefits')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-white/50 rounded-md">
                 {t('nav.benefits')}
-              </button>
-              <button onClick={() => scrollToSection('faq')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md">
-                {t('nav.faq')}
               </button>
               <button
                 onClick={toggleLanguage}
-                className="flex items-center gap-2 w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
+                className="flex items-center gap-2 w-full text-left px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-white/50 rounded-md"
               >
                 <Languages className="h-4 w-4" />
                 <span>{i18n.language === 'en' ? 'Español' : 'English'}</span>
               </button>
-              <Button onClick={() => setContactModalOpen(true)} className="w-full">{t('nav.joinWaitlist')}</Button>
+              <Button onClick={() => setContactModalOpen(true)} className="w-full rounded-full bg-gray-900 hover:bg-gray-800">{t('nav.joinWaitlist')}</Button>
             </div>
           </div>
         )}
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-blue-100/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 sm:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                {t('hero.title')}
-              </h1>
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-                {t('hero.subtitle')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" onClick={() => setContactModalOpen(true)}>
-                  {t('hero.getStarted')}
-                </Button>
-                <Button size="lg" variant="outline" onClick={() => scrollToSection('how-it-works')}>
-                  {t('hero.watchDemo')}
-                </Button>
-              </div>
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-8">
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">95%</div>
-                  <div className="text-xs sm:text-sm text-gray-600">{t('hero.stats.timeSaved')}</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">10K+</div>
-                  <div className="text-xs sm:text-sm text-gray-600">{t('hero.stats.papersAnalyzed')}</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">Hours</div>
-                  <div className="text-xs sm:text-sm text-gray-600">{t('hero.stats.timeFrame')}</div>
-                </div>
-              </div>
-            </div>
-            <div className="relative hidden lg:block">
-              <div className="aspect-square bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl shadow-2xl flex items-center justify-center p-12">
-                <img src="/logo.svg" alt="Smart Research Platform" className="w-full h-full" />
+      <section className="pt-32 pb-32 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-xs tracking-wider uppercase text-gray-600 font-medium shadow-sm">
+              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              SMART RESEARCH V1.0 LIVE
+            </span>
+          </div>
+
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
+            <span className="block text-gray-900">Research acceleration</span>
+            <span className="block font-serif italic text-gray-700">that feels human.</span>
+          </h1>
+
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
+            {t('hero.subtitle')}
+          </p>
+
+          <div className="max-w-2xl mx-auto mb-16">
+            <div className="relative">
+              <div className="flex items-center gap-3 bg-white rounded-full shadow-lg px-6 py-4 border border-gray-200">
+                <Search className="h-5 w-5 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Find a topic to research..."
+                  className="flex-1 outline-none bg-transparent text-gray-900 placeholder-gray-400"
+                  onClick={() => setContactModalOpen(true)}
+                  readOnly
+                />
+                <button className="p-2 hover:bg-gray-50 rounded-full transition-colors">
+                  <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
+            <p className="text-sm text-gray-500 mt-4">⌘K to open • Natural Language Processing</p>
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="features" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('problems.title')}</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('problems.title')}</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('problems.subtitle')}
             </p>
           </div>
@@ -225,11 +223,11 @@ function App() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="how-it-works" className="py-32 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('howItWorks.title')}</h2>
-            <p className="text-xl text-gray-600">{t('howItWorks.subtitle')}</p>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('howItWorks.title')}</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('howItWorks.subtitle')}</p>
           </div>
           <div className="space-y-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -300,11 +298,11 @@ function App() {
       </section>
 
       {/* Benefits */}
-      <section id="benefits" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-blue-100/50">
+      <section id="benefits" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('benefits.title')}</h2>
-            <p className="text-xl text-gray-600">{t('benefits.subtitle')}</p>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('benefits.title')}</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('benefits.subtitle')}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
@@ -384,11 +382,11 @@ function App() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-32 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('comparison.title')}</h2>
-            <p className="text-xl text-gray-600">{t('comparison.subtitle')}</p>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('comparison.title')}</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('comparison.subtitle')}</p>
           </div>
           <div className="bg-white rounded-xl shadow-xl overflow-x-auto">
             <div className="min-w-[600px]">
@@ -430,11 +428,11 @@ function App() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="faq" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('faq.title')}</h2>
-            <p className="text-xl text-gray-600">{t('faq.subtitle')}</p>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('faq.title')}</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('faq.subtitle')}</p>
           </div>
           <div className="space-y-4">
             {['q1', 'q2', 'q3', 'q4', 'q5', 'q6'].map((key, index) => (
@@ -460,22 +458,22 @@ function App() {
       </section>
 
       {/* Waitlist CTA Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">{t('waitlist.title')}</h2>
-          <p className="text-lg sm:text-xl opacity-90 mb-8 sm:mb-12 max-w-2xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">{t('waitlist.title')}</h2>
+          <p className="text-xl sm:text-2xl opacity-90 mb-12 max-w-3xl mx-auto leading-relaxed">
             {t('waitlist.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
               onClick={() => setContactModalOpen(true)}
-              className="bg-white text-primary hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto"
+              className="rounded-full bg-white text-gray-900 hover:bg-gray-100 text-lg px-10 py-6 w-full sm:w-auto"
             >
               {t('waitlist.button')}
             </Button>
           </div>
-          <p className="mt-6 sm:mt-8 text-sm sm:text-base opacity-90">
+          <p className="mt-8 text-base opacity-90">
             {t('waitlist.benefits')}
           </p>
         </div>

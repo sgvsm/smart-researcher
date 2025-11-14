@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
+  --color-background: #f5f3ed;
+  --color-foreground: #1a1a1a;
   --color-card: #ffffff;
-  --color-card-foreground: #0f172a;
+  --color-card-foreground: #1a1a1a;
   --color-popover: #ffffff;
-  --color-popover-foreground: #0f172a;
+  --color-popover-foreground: #1a1a1a;
   --color-primary: #3b82f6;
   --color-primary-foreground: #f8fafc;
-  --color-secondary: #f1f5f9;
+  --color-secondary: #e8e5dc;
   --color-secondary-foreground: #1e293b;
-  --color-muted: #f1f5f9;
+  --color-muted: #e8e5dc;
   --color-muted-foreground: #64748b;
-  --color-accent: #f1f5f9;
+  --color-accent: #e8e5dc;
   --color-accent-foreground: #1e293b;
   --color-destructive: #ef4444;
   --color-destructive-foreground: #f8fafc;
-  --color-border: #e2e8f0;
-  --color-input: #e2e8f0;
+  --color-border: #d4d1c7;
+  --color-input: #ffffff;
   --color-ring: #3b82f6;
   --radius: 0.5rem;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   border-color: var(--color-border);
@@ -30,4 +32,9 @@
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Crimson Text', Georgia, serif;
 }
