@@ -163,59 +163,59 @@ function App() {
               {t('problems.subtitle')}
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <Clock className="h-6 w-6 text-red-600" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <Clock className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.overwhelming.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.overwhelming.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.overwhelming.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.overwhelming.description')}</p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <FileText className="h-6 w-6 text-red-600" />
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <FileText className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.timeIntensive.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.timeIntensive.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.timeIntensive.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.timeIntensive.description')}</p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <Brain className="h-6 w-6 text-red-600" />
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <Brain className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.consistency.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.consistency.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.consistency.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.consistency.description')}</p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="h-6 w-6 text-red-600" />
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <BarChart3 className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.documentation.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.documentation.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.documentation.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.documentation.description')}</p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <Search className="h-6 w-6 text-red-600" />
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <Search className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.expertise.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.expertise.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.expertise.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.expertise.description')}</p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <RefreshCw className="h-6 w-6 text-red-600" />
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+                  <RefreshCw className="h-7 w-7 text-gray-700" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('problems.cards.reproduction.title')}</h3>
-                <p className="text-gray-600">{t('problems.cards.reproduction.description')}</p>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('problems.cards.reproduction.title')}</h3>
+                <p className="text-gray-600 leading-relaxed">{t('problems.cards.reproduction.description')}</p>
               </CardContent>
             </Card>
           </div>
@@ -229,66 +229,66 @@ function App() {
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('howItWorks.title')}</h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('howItWorks.subtitle')}</p>
           </div>
-          <div className="space-y-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-gray-50 p-8 rounded-2xl">
-                <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">1</div>
-                <h3 className="text-2xl font-bold mb-4">{t('howItWorks.steps.search.title')}</h3>
-                <p className="text-gray-600 mb-4">
+          <div className="space-y-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">1</div>
+                <h3 className="text-3xl font-bold mb-4 text-gray-900">{t('howItWorks.steps.search.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
                   {t('howItWorks.steps.search.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('howItWorks.steps.search.badge')}
                 </span>
               </div>
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-64 rounded-2xl flex items-center justify-center">
-                <Search className="h-24 w-24 text-primary" />
+              <div className="bg-gradient-to-br from-blue-500 to-blue-700 h-80 rounded-3xl flex items-center justify-center shadow-xl">
+                <Search className="h-32 w-32 text-white opacity-90" />
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-64 rounded-2xl flex items-center justify-center md:order-first">
-                <Brain className="h-24 w-24 text-primary" />
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-700 h-80 rounded-3xl flex items-center justify-center shadow-xl md:order-first">
+                <Brain className="h-32 w-32 text-white opacity-90" />
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl">
-                <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">2</div>
-                <h3 className="text-2xl font-bold mb-4">{t('howItWorks.steps.read.title')}</h3>
-                <p className="text-gray-600 mb-4">
+              <div className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">2</div>
+                <h3 className="text-3xl font-bold mb-4 text-gray-900">{t('howItWorks.steps.read.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
                   {t('howItWorks.steps.read.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('howItWorks.steps.read.badge')}
                 </span>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-gray-50 p-8 rounded-2xl">
-                <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">3</div>
-                <h3 className="text-2xl font-bold mb-4">{t('howItWorks.steps.review.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">3</div>
+                <h3 className="text-3xl font-bold mb-4 text-gray-900">{t('howItWorks.steps.review.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
                   {t('howItWorks.steps.review.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('howItWorks.steps.review.badge')}
                 </span>
               </div>
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-64 rounded-2xl flex items-center justify-center">
-                <MessageSquare className="h-24 w-24 text-primary" />
+              <div className="bg-gradient-to-br from-blue-500 to-blue-700 h-80 rounded-3xl flex items-center justify-center shadow-xl">
+                <MessageSquare className="h-32 w-32 text-white opacity-90" />
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-64 rounded-2xl flex items-center justify-center md:order-first">
-                <TrendingUp className="h-24 w-24 text-primary" />
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-700 h-80 rounded-3xl flex items-center justify-center shadow-xl md:order-first">
+                <TrendingUp className="h-32 w-32 text-white opacity-90" />
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl">
-                <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-4">4</div>
-                <h3 className="text-2xl font-bold mb-4">{t('howItWorks.steps.analyze.title')}</h3>
-                <p className="text-gray-600 mb-4">
+              <div className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">4</div>
+                <h3 className="text-3xl font-bold mb-4 text-gray-900">{t('howItWorks.steps.analyze.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed text-lg">
                   {t('howItWorks.steps.analyze.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('howItWorks.steps.analyze.badge')}
                 </span>
               </div>
@@ -304,75 +304,87 @@ function App() {
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">{t('benefits.title')}</h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('benefits.subtitle')}</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <Rocket className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.faster.title')}</h3>
-                <p className="text-gray-600 mb-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <Rocket className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.faster.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.faster.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.faster.badge')}
                 </span>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <Target className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.comprehensive.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <Target className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.comprehensive.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.comprehensive.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.comprehensive.badge')}
                 </span>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <BarChart3 className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.rigorous.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <BarChart3 className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.rigorous.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.rigorous.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.rigorous.badge')}
                 </span>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <CheckCircle className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.consistent.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <CheckCircle className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.consistent.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.consistent.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.consistent.badge')}
                 </span>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <Search className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.collaborative.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <Search className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.collaborative.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.collaborative.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.collaborative.badge')}
                 </span>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <DollarSign className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('benefits.cards.affordable.title')}</h3>
-                <p className="text-gray-600 mb-4">
+            <Card className="hover:shadow-xl transition-all duration-300 border-gray-200">
+              <CardContent className="pt-8">
+                <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                  <DollarSign className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{t('benefits.cards.affordable.title')}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {t('benefits.cards.affordable.description')}
                 </p>
-                <span className="inline-block bg-blue-100 text-primary px-3 py-1 rounded-md text-sm font-semibold">
+                <span className="inline-block bg-blue-50 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                   {t('benefits.cards.affordable.badge')}
                 </span>
               </CardContent>
@@ -436,18 +448,18 @@ function App() {
           </div>
           <div className="space-y-4">
             {['q1', 'q2', 'q3', 'q4', 'q5', 'q6'].map((key, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden">
+              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300">
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50 transition-colors"
+                  className="w-full px-8 py-6 text-left font-bold text-lg flex justify-between items-center hover:bg-gray-50 transition-colors text-gray-900"
                 >
                   <span>{t(`faq.questions.${key}.question`)}</span>
                   <ChevronDown
-                    className={`h-5 w-5 transition-transform ${openFaq === index ? 'rotate-180' : ''}`}
+                    className={`h-6 w-6 text-primary transition-transform ${openFaq === index ? 'rotate-180' : ''}`}
                   />
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-4 text-gray-600">
+                  <div className="px-8 pb-6 text-gray-600 leading-relaxed text-lg">
                     {t(`faq.questions.${key}.answer`)}
                   </div>
                 )}
