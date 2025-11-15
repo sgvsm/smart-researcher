@@ -115,16 +115,9 @@ function App() {
       {/* Hero Section */}
       <section className="pt-32 pb-32 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full text-xs tracking-wider uppercase text-gray-600 font-medium shadow-sm">
-              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-              SMART RESEARCH V1.0 LIVE
-            </span>
-          </div>
-
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
-            <span className="block text-gray-900">Research acceleration</span>
-            <span className="block font-serif italic text-gray-700">that feels human.</span>
+            <span className="block text-gray-900">{t('hero.title')}</span>
+            <span className="block font-serif italic text-gray-700">{t('hero.titleItalic')}</span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
@@ -137,7 +130,7 @@ function App() {
                 <Search className="h-5 w-5 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Find a topic to research..."
+                  placeholder={t('hero.searchPlaceholder')}
                   className="flex-1 outline-none bg-transparent text-gray-900 placeholder-gray-400"
                   onClick={() => setContactModalOpen(true)}
                   readOnly
@@ -149,7 +142,6 @@ function App() {
                 </button>
               </div>
             </div>
-            <p className="text-sm text-gray-500 mt-4">⌘K to open • Natural Language Processing</p>
           </div>
         </div>
       </section>
