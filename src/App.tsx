@@ -115,9 +115,9 @@ function App() {
       {/* Hero Section */}
       <section className="pt-32 pb-32 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
-            <span className="block text-gray-900">{t('hero.title')}</span>
-            <span className="block font-serif italic text-gray-700">{t('hero.titleItalic')}</span>
+          <h1 className="font-bold leading-tight mb-6">
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-gray-900">{t('hero.title')}</span>
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif italic text-gray-700">{t('hero.titleItalic')}</span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
